@@ -2,6 +2,8 @@
 from pyfiglet import Figlet
 import datetime
 import json
+import time
+
 
 with open("svatky-db.json", "r", encoding="utf-8") as f: 
     data = json.load(f)         # nacte .json
@@ -36,3 +38,5 @@ with open("svatky-db.json", "r", encoding="utf-8") as f:
     if a == "2":
         if name:
             print()
+
+input("Stiskni enter pro ukonceni...")
